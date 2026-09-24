@@ -202,7 +202,17 @@ const login = useCallback(async () => {
     return (
       <div className="gf-scope">
         <GlobalStyle />
-        <LoginScreen name={name} setName={setName} selectedRole={selectedRole} setSelectedRole={setSelectedRole} login={login} />
+        <LoginScreen
+  name={name}
+  setName={setName}
+  selectedRole={selectedRole}
+  setSelectedRole={setSelectedRole}
+  email={email}
+  setEmail={setEmail}
+  password={password}
+  setPassword={setPassword}
+  login={login}
+/>
       </div>
     );
   }
@@ -269,7 +279,17 @@ const login = useCallback(async () => {
   );
 }
 
-function LoginScreen({ name, setName, selectedRole, setSelectedRole, login }) {
+function LoginScreen({
+  name,
+  setName,
+  selectedRole,
+  setSelectedRole,
+  email,
+  setEmail,
+  password,
+  setPassword,
+  login,
+}) {
   return (
     <div style={S.loginWrap}>
       <div style={S.loginGrid}>
