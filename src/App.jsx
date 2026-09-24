@@ -202,17 +202,7 @@ const login = useCallback(async () => {
     return (
       <div className="gf-scope">
         <GlobalStyle />
-        <LoginScreen
-  name={name}
-  setName={setName}
-  selectedRole={selectedRole}
-  setSelectedRole={setSelectedRole}
-  email={email}
-  setEmail={setEmail}
-  password={password}
-  setPassword={setPassword}
-  login={login}
-/>
+        
       </div>
     );
   }
@@ -1223,7 +1213,7 @@ function ComingSoon({ module }) {
   );
 }
 
-const S = {
+const s = {
   centerScreen: { minHeight: 400, display: "flex", alignItems: "center", justifyContent: "center", borderRadius: 12 },
   shell: { display: "flex", minHeight: 580, background: T.paper, borderRadius: 14, overflow: "hidden", border: `1px solid ${T.line}` },
   sidebar: { width: 240, flexShrink: 0, background: T.ink, padding: "22px 14px", display: "flex", flexDirection: "column" },
